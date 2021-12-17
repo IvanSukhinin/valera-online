@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsStarterProject</title>
+    <title>Auth</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,42 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid" id="menu">
+        <%= link_to 'Valera-Online', root_path, class: 'navbar-brand' %>
+        <% if signed_in? %>
+            <ul class="nav navbar-nav">
+            <li><%= link_to '1234', root_path %></li>
+            </ul>
+        <% end %>
+     
+        <ul class="nav navbar-nav pull-right">
+          <% if signed_in? %>
+          <li><span><%= current_user.email %></span></li>
+          <li><%= link_to 'Sign out', sign_out_path, method: :delete %></li>
+          <% else %>
+          <li><%= link_to 'Sign in', sign_in_path %></li>
+          <% end %>
+        </ul>
+      </div>
+    </nav>
+     
+    <div class="container">
+      <% flash.each do |key, value| %>
+        <% alert_class = case key
+                         when 'notice' then "success"
+                         when 'alert' then "danger"
+                         else key
+                         end %>
+        <%= content_tag :div, class: "alert alert-#{alert_class} alert-dismissible fade show" do %>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          <%= value %>
+        <% end %>
+      <% end %>
+    </div>
+
     <%= yield %>
+
+    <script>$('.alert').alert()</script>
   </body>
 </html>
