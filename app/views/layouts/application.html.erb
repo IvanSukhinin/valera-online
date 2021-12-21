@@ -15,16 +15,15 @@
         <%= link_to 'Valera-Online', root_path, class: 'navbar-brand' %>
         <% if signed_in? %>
             <ul class="nav navbar-nav">
-            <li><%= link_to '1234', root_path %></li>
+              <li><%= link_to current_user.email, root_path, class: 'nav_link', id: 'email'%></li>
             </ul>
         <% end %>
      
         <ul class="nav navbar-nav pull-right">
           <% if signed_in? %>
-          <li><span><%= current_user.email %></span></li>
-          <li><%= link_to 'Sign out', sign_out_path, method: :delete %></li>
+          <li><%= link_to 'Sign out', sign_out_path, class: 'nav_link', method: :delete %></li>
           <% else %>
-          <li><%= link_to 'Sign in', sign_in_path %></li>
+          <li><%= link_to 'Sign in', sign_in_path, class: 'nav_link'%></li>
           <% end %>
         </ul>
       </div>
@@ -43,8 +42,9 @@
         <% end %>
       <% end %>
     </div>
-
-    <%= yield %>
+    <div class="container d-flex justify-content-center">
+      <%= yield %>
+    </div>
 
     <script>$('.alert').alert()</script>
   </body>

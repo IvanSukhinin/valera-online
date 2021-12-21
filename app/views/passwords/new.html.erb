@@ -4,8 +4,8 @@
   <p><%= t(".description") %></p>
 
   <%= form_for :password, url: passwords_path do |form| %>
+  <%= form.label :email %>
     <div class="text-field">
-      <%= form.label :email %>
       <%= form.text_field :email, type: 'email' %>
     </div>
 

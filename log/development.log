@@ -7785,4 +7785,1537 @@ For historical reasons, it may run twice, so it has to be idempotent.
 
 Check the "Autoloading and Reloading Constants" guide to learn more about how
 Rails autoloads and reloads.
- (called from <main> at /home/shazam/ruby/rails_commits/2 auth/config/environment.rb:5)
+ (called from <main> at /home/shazam/ruby/rails_commits/3 styles auth/config/environment.rb:5)
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:28:57 +0700
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 4.7ms | Allocations: 1813)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 17.6ms | Allocations: 4432)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 193.4ms | Allocations: 25358)
+Completed 200 OK in 222ms (Views: 211.5ms | ActiveRecord: 0.0ms | Allocations: 29483)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-04 21:28:59 +0700
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 39.2ms | Allocations: 141)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.9ms | Allocations: 3693)
+Completed 200 OK in 56ms (Views: 54.0ms | ActiveRecord: 0.0ms | Allocations: 5062)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:29:00 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 3.7ms | Allocations: 515)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 10.2ms | Allocations: 655)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.2ms | Allocations: 3891)
+Completed 200 OK in 33ms (Views: 31.1ms | ActiveRecord: 0.0ms | Allocations: 4424)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:31:20 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 2.2ms | Allocations: 476)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 592)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 9538)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.0ms | Allocations: 10015)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:31:36 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.0ms | Allocations: 476)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 592)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 8951)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms | Allocations: 9425)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:31:54 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.4ms | Allocations: 476)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 592)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 9435)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.0ms | Allocations: 9908)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:32:13 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 2.3ms | Allocations: 478)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 594)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.9ms | Allocations: 10769)
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.0ms | Allocations: 11243)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:32:25 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.5ms | Allocations: 476)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 592)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.2ms | Allocations: 8988)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms | Allocations: 9461)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:32:33 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.3ms | Allocations: 476)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 592)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 3862)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 4337)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:33:05 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 3.6ms | Allocations: 476)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 592)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.3ms | Allocations: 9864)
+Completed 200 OK in 59ms (Views: 57.5ms | ActiveRecord: 0.0ms | Allocations: 10338)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:33:43 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 3.8ms | Allocations: 478)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 594)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.4ms | Allocations: 10342)
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 0.0ms | Allocations: 10816)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:33:49 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 2.2ms | Allocations: 476)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 592)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 59.6ms | Allocations: 9845)
+Completed 200 OK in 63ms (Views: 62.3ms | ActiveRecord: 0.0ms | Allocations: 10322)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:34:06 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 2.9ms | Allocations: 476)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 592)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 73.8ms | Allocations: 10826)
+Completed 200 OK in 78ms (Views: 75.8ms | ActiveRecord: 0.0ms | Allocations: 11299)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:34:12 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.3ms | Allocations: 477)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 9912)
+Completed 200 OK in 27ms (Views: 26.7ms | ActiveRecord: 0.0ms | Allocations: 10386)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:34:20 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 2.1ms | Allocations: 476)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 592)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 8978)
+Completed 200 OK in 28ms (Views: 27.7ms | ActiveRecord: 0.0ms | Allocations: 9452)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:35:42 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.8ms | Allocations: 476)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 592)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 9518)
+Completed 200 OK in 31ms (Views: 30.3ms | Allocations: 9989)
+
+
+Started POST "/session" for 127.0.0.1 at 2021-12-04 21:35:45 +0700
+Processing by Clearance::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.0ms | Allocations: 547)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 676)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 4020)
+Completed 401 Unauthorized in 391ms (Views: 6.7ms | ActiveRecord: 34.3ms | Allocations: 16667)
+
+
+Started GET "/session" for 127.0.0.1 at 2021-12-04 21:36:01 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/session"):
+  
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:36:03 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.2ms | Allocations: 537)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 672)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 9866)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.0ms | Allocations: 10428)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:36:19 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.4ms | Allocations: 476)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 592)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.1ms | Allocations: 9502)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.0ms | Allocations: 9976)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:36:33 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.5ms | Allocations: 476)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 592)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 74.3ms | Allocations: 9557)
+Completed 200 OK in 76ms (Views: 75.6ms | ActiveRecord: 0.0ms | Allocations: 10030)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:36:39 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.5ms | Allocations: 477)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 9547)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.0ms | Allocations: 10021)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:37:13 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 4.8ms | Allocations: 476)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 592)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.6ms | Allocations: 9490)
+Completed 200 OK in 71ms (Views: 69.2ms | ActiveRecord: 0.0ms | Allocations: 9963)
+
+
+Started POST "/session" for 127.0.0.1 at 2021-12-04 21:37:16 +0700
+Processing by Clearance::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.3ms | Allocations: 471)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 587)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3858)
+Completed 401 Unauthorized in 298ms (Views: 7.0ms | ActiveRecord: 2.2ms | Allocations: 5598)
+
+
+Started GET "/session" for 127.0.0.1 at 2021-12-04 21:37:44 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/session"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-04 21:37:46 +0700
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 9494)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.0ms | Allocations: 9941)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:37:48 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 2.2ms | Allocations: 478)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 594)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 4409)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms | Allocations: 4887)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:38:05 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.8ms | Allocations: 476)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 592)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 9119)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.0ms | Allocations: 9592)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:38:11 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 2.9ms | Allocations: 477)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.4ms | Allocations: 10429)
+Completed 200 OK in 40ms (Views: 37.9ms | ActiveRecord: 0.0ms | Allocations: 10903)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:38:15 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.3ms | Allocations: 476)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 592)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.2ms | Allocations: 9991)
+Completed 200 OK in 29ms (Views: 28.8ms | ActiveRecord: 0.0ms | Allocations: 10465)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:38:22 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.1ms | Allocations: 476)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 592)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 9491)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms | Allocations: 9965)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:38:26 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 2.4ms | Allocations: 477)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 3828)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 4303)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:38:46 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.4ms | Allocations: 476)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 592)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.2ms | Allocations: 8620)
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.0ms | Allocations: 9094)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:39:19 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.0ms | Allocations: 476)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 592)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 9545)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.0ms | Allocations: 10019)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:39:24 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.2ms | Allocations: 476)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 592)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3822)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 4297)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:39:33 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.3ms | Allocations: 476)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 592)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 9973)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.0ms | Allocations: 10446)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:39:46 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.2ms | Allocations: 478)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 594)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 10007)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.0ms | Allocations: 10481)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:41:41 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 2.3ms | Allocations: 871)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1284)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 5262)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.0ms | Allocations: 7050)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:42:06 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.9ms | Allocations: 476)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 592)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.6ms | Allocations: 10989)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.0ms | Allocations: 11513)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:42:16 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 2.1ms | Allocations: 477)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.6ms | Allocations: 10018)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.0ms | Allocations: 10491)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:42:38 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.4ms | Allocations: 476)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 592)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 9980)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 10454)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:43:35 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 3.0ms | Allocations: 871)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1284)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 5206)
+Completed 200 OK in 19ms (Views: 18.2ms | Allocations: 6989)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:43:37 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 2.4ms | Allocations: 476)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 592)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.4ms | Allocations: 3822)
+Completed 200 OK in 34ms (Views: 32.7ms | Allocations: 4342)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:43:46 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 3.0ms | Allocations: 873)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1284)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 5211)
+Completed 200 OK in 20ms (Views: 18.8ms | Allocations: 6993)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:43:51 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 9.9ms | Allocations: 871)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 11.0ms | Allocations: 1278)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 5200)
+Completed 200 OK in 23ms (Views: 22.2ms | Allocations: 7020)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:46:25 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 2.7ms | Allocations: 871)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1278)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 5205)
+Completed 200 OK in 15ms (Views: 14.2ms | Allocations: 7027)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:46:44 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.7ms | Allocations: 871)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1280)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 5202)
+Completed 200 OK in 16ms (Views: 15.3ms | Allocations: 7034)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:46:51 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.0ms | Allocations: 478)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 594)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3829)
+Completed 200 OK in 13ms (Views: 7.7ms | Allocations: 4350)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:47:07 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.7ms | Allocations: 476)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 592)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 10081)
+Completed 200 OK in 23ms (Views: 22.4ms | Allocations: 10551)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application.css-742f3058d0c1254c16086b91e04a12e0c4aad3850930d2ed15ff5b2533beb43e.map"):
+  
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:50:09 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 2.3ms | Allocations: 873)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1281)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 86.0ms | Allocations: 6817)
+Completed 200 OK in 135ms (Views: 134.3ms | Allocations: 8599)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2021-12-04 21:50:11 +0700
+Processing by Clearance::UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 81.5ms | Allocations: 648)
+  Rendered users/new.html.erb within layouts/application (Duration: 161.6ms | Allocations: 1792)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 176.7ms | Allocations: 5203)
+Completed 200 OK in 185ms (Views: 181.3ms | Allocations: 6708)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-12-04 21:50:15 +0700
+Processing by Clearance::UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.1ms | Allocations: 1968)
+  Rendered users/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2384)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 5556)
+Completed 200 OK in 234ms (Views: 9.3ms | ActiveRecord: 97.5ms | Allocations: 10238)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:50:17 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.7ms | Allocations: 479)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 602)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 3986)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 4910)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2021-12-04 21:50:18 +0700
+Processing by Clearance::UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.1ms | Allocations: 312)
+  Rendered users/new.html.erb within layouts/application (Duration: 10.5ms | Allocations: 715)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 3950)
+Completed 200 OK in 28ms (Views: 24.9ms | ActiveRecord: 0.0ms | Allocations: 4472)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-12-04 21:50:19 +0700
+Processing by Clearance::UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 15.0ms | Allocations: 1800)
+  Rendered users/new.html.erb within layouts/application (Duration: 19.5ms | Allocations: 2198)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.8ms | Allocations: 5364)
+Completed 200 OK in 44ms (Views: 34.7ms | ActiveRecord: 0.0ms | Allocations: 6598)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-12-04 21:50:21 +0700
+Processing by Clearance::UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 9.5ms | Allocations: 1800)
+  Rendered users/new.html.erb within layouts/application (Duration: 11.5ms | Allocations: 2198)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.8ms | Allocations: 5364)
+Completed 200 OK in 29ms (Views: 23.5ms | ActiveRecord: 0.0ms | Allocations: 6581)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:50:22 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.7ms | Allocations: 476)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 592)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 4411)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.0ms | Allocations: 4888)
+
+
+Started POST "/session" for 127.0.0.1 at 2021-12-04 21:50:23 +0700
+Processing by Clearance::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.0ms | Allocations: 472)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 588)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 3865)
+Completed 401 Unauthorized in 347ms (Views: 6.6ms | ActiveRecord: 8.3ms | Allocations: 5832)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2021-12-04 21:50:25 +0700
+Processing by Clearance::UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 0.9ms | Allocations: 314)
+  Rendered users/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1140)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 4511)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 5063)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-12-04 21:50:26 +0700
+Processing by Clearance::UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 9.6ms | Allocations: 1800)
+  Rendered users/new.html.erb within layouts/application (Duration: 11.3ms | Allocations: 2198)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 5369)
+Completed 200 OK in 37ms (Views: 20.8ms | ActiveRecord: 0.0ms | Allocations: 6602)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-12-04 21:50:48 +0700
+Processing by Clearance::UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"sd@12", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (5.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sd@12"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (56.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 6.9ms | Allocations: 810)
+  Rendered users/new.html.erb within layouts/application (Duration: 11.1ms | Allocations: 1208)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.6ms | Allocations: 4374)
+Completed 200 OK in 125ms (Views: 33.4ms | ActiveRecord: 67.0ms | Allocations: 8856)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:50:55 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 0.9ms | Allocations: 476)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 599)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 4386)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 4862)
+
+
+Started POST "/session" for 127.0.0.1 at 2021-12-04 21:50:57 +0700
+Processing by Clearance::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.1ms | Allocations: 472)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 588)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 3862)
+Completed 401 Unauthorized in 341ms (Views: 6.7ms | ActiveRecord: 3.4ms | Allocations: 5480)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2021-12-04 21:51:02 +0700
+Processing by Clearance::UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 0.7ms | Allocations: 313)
+  Rendered users/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 724)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 4109)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 5076)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-12-04 21:51:04 +0700
+Processing by Clearance::UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 16.9ms | Allocations: 1800)
+  Rendered users/new.html.erb within layouts/application (Duration: 20.5ms | Allocations: 2199)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.5ms | Allocations: 5365)
+Completed 200 OK in 47ms (Views: 33.5ms | ActiveRecord: 0.0ms | Allocations: 6595)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-04 21:51:10 +0700
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 16.6ms | Allocations: 302)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.4ms | Allocations: 3846)
+Completed 200 OK in 110ms (Views: 38.5ms | ActiveRecord: 0.0ms | Allocations: 5542)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:51:11 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.5ms | Allocations: 514)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 654)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 4478)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 5004)
+
+
+Started POST "/session" for 127.0.0.1 at 2021-12-04 21:51:16 +0700
+Processing by Clearance::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.0ms | Allocations: 471)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 587)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3857)
+Completed 401 Unauthorized in 316ms (Views: 6.0ms | ActiveRecord: 4.6ms | Allocations: 5613)
+
+
+Started GET "/passwords/new" for 127.0.0.1 at 2021-12-04 21:51:19 +0700
+Processing by Clearance::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/new.html.erb within layouts/application
+  Rendered passwords/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 767)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 4198)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.0ms | Allocations: 5570)
+
+
+Started GET "/passwords/new" for 127.0.0.1 at 2021-12-04 21:52:18 +0700
+Processing by Clearance::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/new.html.erb within layouts/application
+  Rendered passwords/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 726)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 4656)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.0ms | Allocations: 6486)
+
+
+Started GET "/passwords/new" for 127.0.0.1 at 2021-12-04 21:53:15 +0700
+Processing by Clearance::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/new.html.erb within layouts/application
+  Rendered passwords/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 727)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 4662)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 6488)
+
+
+Started POST "/passwords" for 127.0.0.1 at 2021-12-04 21:53:21 +0700
+Processing by Clearance::PasswordsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "password"=>"[FILTERED]", "commit"=>"Reset password"}
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/new.html.erb within layouts/application
+  Rendered passwords/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 344)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 3614)
+Filter chain halted as :ensure_email_present rendered or redirected
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 4431)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-04 21:53:28 +0700
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 151)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 3845)
+Completed 200 OK in 48ms (Views: 28.1ms | ActiveRecord: 0.0ms | Allocations: 5541)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:53:30 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 6.6ms | Allocations: 857)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 9.9ms | Allocations: 1265)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.4ms | Allocations: 4708)
+Completed 200 OK in 43ms (Views: 41.1ms | ActiveRecord: 0.0ms | Allocations: 6760)
+
+
+Started POST "/session" for 127.0.0.1 at 2021-12-04 21:53:31 +0700
+Processing by Clearance::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 0.7ms | Allocations: 471)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 587)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3859)
+Completed 401 Unauthorized in 320ms (Views: 7.5ms | ActiveRecord: 2.5ms | Allocations: 5670)
+
+
+Started GET "/session" for 127.0.0.1 at 2021-12-04 21:54:24 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/session"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-04 21:54:28 +0700
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 224.8ms | Allocations: 9144)
+Completed 200 OK in 230ms (Views: 227.4ms | ActiveRecord: 0.0ms | Allocations: 9593)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-04 21:54:37 +0700
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 109.7ms | Allocations: 9493)
+Completed 200 OK in 111ms (Views: 110.3ms | ActiveRecord: 0.0ms | Allocations: 9940)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-04 21:54:56 +0700
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 46.9ms | Allocations: 9034)
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.0ms | Allocations: 9480)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-04 21:55:22 +0700
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 86.9ms | Allocations: 9981)
+Completed 200 OK in 88ms (Views: 87.6ms | ActiveRecord: 0.0ms | Allocations: 10429)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-04 21:58:11 +0700
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 145)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 9613)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.0ms | Allocations: 11030)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:58:18 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 5.2ms | Allocations: 874)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1419)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 4859)
+Completed 200 OK in 20ms (Views: 19.7ms | ActiveRecord: 0.0ms | Allocations: 7141)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:58:47 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 4.9ms | Allocations: 889)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1300)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 222.2ms | Allocations: 11471)
+Completed 200 OK in 228ms (Views: 227.0ms | ActiveRecord: 0.0ms | Allocations: 13311)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:59:00 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 7.1ms | Allocations: 888)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 9.0ms | Allocations: 1295)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 5230)
+Completed 200 OK in 25ms (Views: 23.8ms | Allocations: 7051)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 21:59:25 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 7.1ms | Allocations: 889)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 10.6ms | Allocations: 1297)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 5233)
+Completed 200 OK in 44ms (Views: 42.6ms | Allocations: 7054)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 22:00:04 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.2ms | Allocations: 487)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 603)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3843)
+Completed 200 OK in 9ms (Views: 8.7ms | Allocations: 4364)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 22:00:59 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.4ms | Allocations: 486)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 602)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 92.0ms | Allocations: 10976)
+Completed 200 OK in 94ms (Views: 93.0ms | Allocations: 11447)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-04 22:10:39 +0700
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 144)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 71.4ms | Allocations: 10756)
+Completed 200 OK in 75ms (Views: 73.4ms | Allocations: 11920)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-04 22:10:40 +0700
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 46.9ms | Allocations: 3552)
+Completed 200 OK in 49ms (Views: 48.1ms | Allocations: 4264)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 22:10:44 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.1ms | Allocations: 526)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 666)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 4503)
+Completed 200 OK in 16ms (Views: 15.8ms | Allocations: 4980)
+
+
+Started POST "/session" for 127.0.0.1 at 2021-12-04 22:10:49 +0700
+Processing by Clearance::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.4ms | Allocations: 481)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 597)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 3879)
+Completed 401 Unauthorized in 449ms (Views: 11.0ms | ActiveRecord: 54.6ms | Allocations: 8875)
+
+
+Started POST "/session" for 127.0.0.1 at 2021-12-04 22:10:54 +0700
+Processing by Clearance::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"ssssshazam@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ssssshazam@gmail.com"], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.7ms | Allocations: 481)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 597)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 3871)
+Completed 401 Unauthorized in 91ms (Views: 18.5ms | ActiveRecord: 1.1ms | Allocations: 5452)
+
+
+Started POST "/session" for 127.0.0.1 at 2021-12-04 22:11:01 +0700
+Processing by Clearance::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"ssssshazam@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ssssshazam@gmail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 302ms (ActiveRecord: 0.9ms | Allocations: 1436)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-04 22:11:01 +0700
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["remember_token", "26040dbc62558dec9448728dee18e5ea2a6d7440"], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:16
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 4516)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 1.4ms | Allocations: 4962)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-04 22:11:32 +0700
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 145)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["remember_token", "26040dbc62558dec9448728dee18e5ea2a6d7440"], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:16
+  Rendered layout layouts/application.html.erb (Duration: 40.9ms | Allocations: 5390)
+Completed 200 OK in 61ms (Views: 56.4ms | ActiveRecord: 1.6ms | Allocations: 6822)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-04 22:13:38 +0700
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["remember_token", "26040dbc62558dec9448728dee18e5ea2a6d7440"], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:16
+  Rendered layout layouts/application.html.erb (Duration: 186.0ms | Allocations: 11962)
+Completed 200 OK in 189ms (Views: 185.8ms | ActiveRecord: 1.6ms | Allocations: 12458)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-04 22:14:11 +0700
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["remember_token", "26040dbc62558dec9448728dee18e5ea2a6d7440"], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:16
+  Rendered layout layouts/application.html.erb (Duration: 40.2ms | Allocations: 9636)
+Completed 200 OK in 42ms (Views: 39.1ms | ActiveRecord: 1.8ms | Allocations: 10083)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-04 22:14:22 +0700
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["remember_token", "26040dbc62558dec9448728dee18e5ea2a6d7440"], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:16
+  Rendered layout layouts/application.html.erb (Duration: 155.6ms | Allocations: 11078)
+Completed 200 OK in 158ms (Views: 154.9ms | ActiveRecord: 1.7ms | Allocations: 11525)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-04 22:14:45 +0700
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["remember_token", "26040dbc62558dec9448728dee18e5ea2a6d7440"], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:16
+  Rendered layout layouts/application.html.erb (Duration: 78.4ms | Allocations: 10048)
+Completed 200 OK in 83ms (Views: 79.3ms | ActiveRecord: 2.7ms | Allocations: 10496)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-04 22:14:52 +0700
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["remember_token", "26040dbc62558dec9448728dee18e5ea2a6d7440"], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:16
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 4334)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 1.0ms | Allocations: 4785)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-04 22:14:53 +0700
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["remember_token", "26040dbc62558dec9448728dee18e5ea2a6d7440"], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:16
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 4333)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 1.3ms | Allocations: 4784)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-04 22:14:55 +0700
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["remember_token", "26040dbc62558dec9448728dee18e5ea2a6d7440"], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:16
+  Rendered layout layouts/application.html.erb (Duration: 27.8ms | Allocations: 4330)
+Completed 200 OK in 31ms (Views: 24.2ms | ActiveRecord: 4.9ms | Allocations: 4779)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-04 22:16:21 +0700
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 145)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["remember_token", "26040dbc62558dec9448728dee18e5ea2a6d7440"], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:16
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 5372)
+Completed 200 OK in 27ms (Views: 23.1ms | ActiveRecord: 1.4ms | Allocations: 6788)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-04 22:17:18 +0700
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 140)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["remember_token", "26040dbc62558dec9448728dee18e5ea2a6d7440"], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:16
+  Rendered layout layouts/application.html.erb (Duration: 112.8ms | Allocations: 12164)
+Completed 200 OK in 117ms (Views: 114.3ms | ActiveRecord: 1.4ms | Allocations: 13621)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-04 22:17:20 +0700
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["remember_token", "26040dbc62558dec9448728dee18e5ea2a6d7440"], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:16
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 4330)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 1.2ms | Allocations: 4824)
+
+
+Started DELETE "/sign_out" for 127.0.0.1 at 2021-12-04 22:19:32 +0700
+Processing by Clearance::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."remember_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["remember_token", "26040dbc62558dec9448728dee18e5ea2a6d7440"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (1.2ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "remember_token" = $2 WHERE "users"."id" = $3[0m  [["updated_at", "2021-12-04 15:19:32.400716"], ["remember_token", "ff602b68869ec9573a8f9ff6fb610094e817e8b3"], ["id", 1]]
+  [1m[36mTRANSACTION (66.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 109ms (ActiveRecord: 69.3ms | Allocations: 4850)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 22:19:32 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 2.1ms | Allocations: 890)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1297)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 4755)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 6304)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 22:20:09 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 2.1ms | Allocations: 486)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 602)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.6ms | Allocations: 9631)
+Completed 200 OK in 44ms (Views: 42.8ms | ActiveRecord: 0.0ms | Allocations: 10154)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 22:20:21 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.7ms | Allocations: 486)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 602)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.7ms | Allocations: 10914)
+Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.0ms | Allocations: 11387)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2021-12-04 22:20:26 +0700
+Processing by Clearance::UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 19.2ms | Allocations: 499)
+  Rendered users/new.html.erb within layouts/application (Duration: 31.5ms | Allocations: 2189)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.7ms | Allocations: 5624)
+Completed 200 OK in 40ms (Views: 39.5ms | ActiveRecord: 0.0ms | Allocations: 6892)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2021-12-04 22:21:01 +0700
+Processing by Clearance::UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 6.6ms | Allocations: 508)
+  Rendered users/new.html.erb within layouts/application (Duration: 10.1ms | Allocations: 1406)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 5331)
+Completed 200 OK in 57ms (Views: 56.4ms | ActiveRecord: 0.0ms | Allocations: 7228)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 22:21:07 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.7ms | Allocations: 889)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1290)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 4751)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 6003)
+
+
+Started GET "/passwords/new" for 127.0.0.1 at 2021-12-04 22:21:08 +0700
+Processing by Clearance::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/new.html.erb within layouts/application
+  Rendered passwords/new.html.erb within layouts/application (Duration: 16.7ms | Allocations: 1517)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.0ms | Allocations: 4966)
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.0ms | Allocations: 6214)
+
+
+Started POST "/passwords" for 127.0.0.1 at 2021-12-04 22:21:10 +0700
+Processing by Clearance::PasswordsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "password"=>"[FILTERED]", "commit"=>"Reset password"}
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/new.html.erb within layouts/application
+  Rendered passwords/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 344)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 3619)
+Filter chain halted as :ensure_email_present rendered or redirected
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 4414)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-04 22:21:40 +0700
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 140)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 4349)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms | Allocations: 5531)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-04 22:36:46 +0700
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3312)
+Completed 200 OK in 9ms (Views: 7.7ms | Allocations: 3804)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 22:36:48 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.2ms | Allocations: 524)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 664)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3899)
+Completed 200 OK in 10ms (Views: 9.6ms | Allocations: 4375)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2021-12-04 22:36:50 +0700
+Processing by Clearance::UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.0ms | Allocations: 321)
+  Rendered users/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 833)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 4131)
+Completed 200 OK in 17ms (Views: 15.4ms | Allocations: 5111)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-12-04 22:36:51 +0700
+Processing by Clearance::UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 7.2ms | Allocations: 1806)
+  Rendered users/new.html.erb within layouts/application (Duration: 9.5ms | Allocations: 2209)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 5380)
+Completed 200 OK in 67ms (Views: 18.9ms | ActiveRecord: 15.8ms | Allocations: 9632)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-12-04 22:36:52 +0700
+Processing by Clearance::UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 7.9ms | Allocations: 1800)
+  Rendered users/new.html.erb within layouts/application (Duration: 9.9ms | Allocations: 2203)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 5374)
+Completed 200 OK in 27ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 6588)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-12-04 22:37:06 +0700
+Processing by Clearance::UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"123123@123", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "123123@123"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.9ms | Allocations: 810)
+  Rendered users/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1213)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 4384)
+Completed 200 OK in 22ms (Views: 7.7ms | ActiveRecord: 4.1ms | Allocations: 8763)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-12-04 22:37:08 +0700
+Processing by Clearance::UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"123123@123", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "123123@123"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.7ms | Allocations: 810)
+  Rendered users/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1213)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 4384)
+Completed 200 OK in 27ms (Views: 14.2ms | ActiveRecord: 4.4ms | Allocations: 8640)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-12-04 22:37:20 +0700
+Processing by Clearance::UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"ssssshazam@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ssssshazam@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.4ms | Allocations: 863)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1266)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 4437)
+Completed 200 OK in 291ms (Views: 7.3ms | ActiveRecord: 2.7ms | Allocations: 8747)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationRecord and User.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationRecord, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+In order to autoload safely at boot time, please wrap your code in a reloader
+callback this way:
+
+    Rails.application.reloader.to_prepare do
+      # Autoload classes and modules needed at boot time here.
+    end
+
+That block runs when the application boots, and every time there is a reload.
+For historical reasons, it may run twice, so it has to be idempotent.
+
+Check the "Autoloading and Reloading Constants" guide to learn more about how
+Rails autoloads and reloads.
+ (called from <main> at /home/shazam/ruby/rails_commits/3 styles auth/config/environment.rb:5)
+Started GET "/users" for 127.0.0.1 at 2021-12-04 23:13:15 +0700
+Started GET "/" for 127.0.0.1 at 2021-12-04 23:13:16 +0700
+  [1m[35m (36.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 29.2ms | Allocations: 714)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1029.4ms | Allocations: 57757)
+Completed 200 OK in 1230ms (Views: 1097.0ms | ActiveRecord: 0.0ms | Allocations: 71773)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-04 23:13:18 +0700
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 3423)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 3927)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 23:13:22 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 32.7ms | Allocations: 1528)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 85.1ms | Allocations: 3275)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 103.1ms | Allocations: 6700)
+Completed 200 OK in 112ms (Views: 110.4ms | ActiveRecord: 0.0ms | Allocations: 8448)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2021-12-04 23:13:27 +0700
+Processing by Clearance::UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 24.6ms | Allocations: 665)
+  Rendered users/new.html.erb within layouts/application (Duration: 38.5ms | Allocations: 1828)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.2ms | Allocations: 5245)
+Completed 200 OK in 223ms (Views: 55.1ms | ActiveRecord: 139.0ms | Allocations: 11504)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 23:13:29 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 2.2ms | Allocations: 492)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 612)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 3854)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 4397)
+
+
+Started GET "/passwords/new" for 127.0.0.1 at 2021-12-04 23:13:30 +0700
+Processing by Clearance::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/new.html.erb within layouts/application
+  Rendered passwords/new.html.erb within layouts/application (Duration: 18.7ms | Allocations: 757)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 4189)
+Completed 200 OK in 29ms (Views: 28.4ms | ActiveRecord: 0.0ms | Allocations: 5701)
+
+
+Started GET "/passwords/new" for 127.0.0.1 at 2021-12-04 23:13:33 +0700
+Processing by Clearance::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/new.html.erb within layouts/application
+  Rendered passwords/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 347)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 3584)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 4104)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-04 23:14:00 +0700
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 3314)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 3771)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 23:14:01 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.0ms | Allocations: 487)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 607)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 3847)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 4325)
+
+
+Started GET "/passwords/new" for 127.0.0.1 at 2021-12-04 23:14:18 +0700
+Processing by Clearance::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/new.html.erb within layouts/application
+  Rendered passwords/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 347)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3584)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 4056)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-04 23:14:19 +0700
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.5ms | Allocations: 3903)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.0ms | Allocations: 4353)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2021-12-04 23:14:23 +0700
+Processing by Clearance::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 2.8ms | Allocations: 486)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 602)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.8ms | Allocations: 3842)
+Completed 200 OK in 35ms (Views: 33.0ms | ActiveRecord: 0.0ms | Allocations: 4319)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-04 23:14:24 +0700
+Processing by AuthController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/index.html.erb within layouts/application
+  Rendered auth/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3313)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 3763)
+
+
