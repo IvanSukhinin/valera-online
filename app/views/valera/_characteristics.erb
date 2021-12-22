@@ -1,9 +1,9 @@
 <div class="row stat-block">
   <div class="stat col-2">
-    <p>Health:</p> 
+    <p>Health:</p>
   </div>
   <div class="col-1"></div>
-  <div class="col-8 pr-block"> 
+  <div class="col-8 pr-block">
     <div class="progress">
       <div id="health" class="progress-bar bg-danger" role="progressbar" style="width: <%=@valera.health%>%; color: black;" aria-valuemin="0" aria-valuemax="100"><%=@valera.health%>%</div>
     </div>
@@ -12,10 +12,10 @@
 
 <div class="row stat-block">
   <div class="stat col-2">
-    <p>Mana:</p> 
+    <p>Mana:</p>
   </div>
   <div class="col-1"></div>
-  <div class="col-8 pr-block"> 
+  <div class="col-8 pr-block">
     <div class="progress">
       <div id='mana' class="progress-bar" role="progressbar" style="width: <%=@valera.mana%>%; color: black;" aria-valuemin="0" aria-valuemax="100"><%=@valera.mana%>%</div>
     </div>
@@ -24,23 +24,23 @@
 
 <div class="row stat-block">
   <div class="stat col-2">
-    <p>Cheerfulness:</p> 
+    <p>Cheerfulness:</p>
   </div>
   <div class="col-1"></div>
 
-  <div class="col-8 pr-block"> 
+  <div class="col-8 pr-block">
     <div class="progress">
-      <div id="cheerfulness" class="progress-bar bg-warning" role="progressbar" style="width: <%=(@valera.cheerfulness.abs+@max_characteristic.cheerfulness)*5 %>%; color: black;" aria-valuemin="0" aria-valuemax="100"><%=(@valera.cheerfulness.abs+@max_characteristic.cheerfulness)*5%>%</div>
+      <div id="cheerfulness" class="progress-bar bg-warning" role="progressbar" style="width: <%=(@valera.cheerfulness+@valera.max_characteristic.cheerfulness)*5 %>%; color: black;" aria-valuemin="0" aria-valuemax="100"><%=(@valera.cheerfulness+@valera.max_characteristic.cheerfulness)*5%>%</div>
     </div>
   </div>
 </div>
 
 <div class="row stat-block">
   <div class="stat col-2">
-    <p>Fatigue:</p> 
+    <p>Fatigue:</p>
   </div>
   <div class="col-1"></div>
-  <div class="col-8 pr-block"> 
+  <div class="col-8 pr-block">
     <div class="progress">
       <div id='fatigue' class="progress-bar bg-info" role="progressbar" style="width: <%=@valera.fatigue%>%; color: black;" aria-valuemin="0" aria-valuemax="100"><%=@valera.fatigue%>%</div>
     </div>

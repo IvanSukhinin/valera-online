@@ -7,8 +7,8 @@ $("#health").text(<%=@valera.health%> + "%");
 $("#mana").css("width", <%=@valera.mana%> + "%");
 $("#mana").text(<%=@valera.mana%> + "%");
 
-$("#cheerfulness").css("width", <%=(@valera.cheerfulness.abs+@max_characteristic.cheerfulness)*5%> + "%");
-$("#cheerfulness").text(<%=(@valera.cheerfulness.abs+@max_characteristic.cheerfulness)*5%> + "%");
+$("#cheerfulness").css("width", <%=(@valera.cheerfulness+@valera.max_characteristic.cheerfulness)*5%> + "%");
+$("#cheerfulness").text(<%=(@valera.cheerfulness+@valera.max_characteristic.cheerfulness)*5%> + "%");
 
 $("#fatigue").css("width", <%=@valera.fatigue%> + "%");
 $("#fatigue").text(<%=@valera.fatigue%> + "%");

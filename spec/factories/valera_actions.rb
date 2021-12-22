@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :valera_action do
-    name { "" }
-    description { "" }
+    name { '' }
+    description { '' }
     health { 1 }
     mana { 1 }
     cheerfulness { 1 }

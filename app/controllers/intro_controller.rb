@@ -1,11 +1,7 @@
 class IntroController < ApplicationController
+  def index
+    redirect_to '/valera' if signed_in?
+  end
 
-	def index 
-		if signed_in?
-			redirect_to '/valera'
-		end
-	end
-
-	def new_game; end
-
+  def new_game; end
 end
