@@ -1,7 +1,8 @@
-class CreateValeras < ActiveRecord::Migration[6.1]
+class CreateValeraActions < ActiveRecord::Migration[6.1]
   def change
-    create_table :valeras do |t|
-      t.belongs_to :user, index: { unique: true }, foreign_key: true
+    create_table :valera_actions do |t|
+      t.string :name
+      t.string :description
       t.integer :health
       t.integer :mana
       t.integer :cheerfulness

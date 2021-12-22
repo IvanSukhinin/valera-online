@@ -10,10 +10,53 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_04_164553) do
+ActiveRecord::Schema.define(version: 2021_12_19_221937) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "max_characteristics", force: :cascade do |t|
+    t.bigint "valera_id"
+    t.integer "health", default: 100
+    t.integer "mana", default: 100
+    t.integer "cheerfulness", default: 10
+    t.integer "fatigue", default: 100
+    t.integer "money", default: 100
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["valera_id"], name: "index_max_characteristics_on_valera_id", unique: true
+  end
+
+  create_table "metro_characteristics", force: :cascade do |t|
+    t.bigint "valera_id"
+    t.integer "tips", default: 50
+    t.integer "min_mana", default: 40
+    t.integer "max_mana", default: 70
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["valera_id"], name: "index_metro_characteristics_on_valera_id", unique: true
+  end
+
+  create_table "min_characteristics", force: :cascade do |t|
+    t.bigint "valera_id"
+    t.integer "health", default: 0
+    t.integer "mana", default: 0
+    t.integer "cheerfulness", default: -10
+    t.integer "fatigue", default: 0
+    t.integer "money", default: -500
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["valera_id"], name: "index_min_characteristics_on_valera_id", unique: true
+  end
+
+  create_table "sleep_characteristics", force: :cascade do |t|
+    t.bigint "valera_id"
+    t.integer "heal_mana", default: 30
+    t.integer "cheerfulness_mana", default: 70
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["valera_id"], name: "index_sleep_characteristics_on_valera_id", unique: true
+  end
 
   create_table "users", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
@@ -26,25 +69,43 @@ ActiveRecord::Schema.define(version: 2021_12_04_164553) do
     t.index ["remember_token"], name: "index_users_on_remember_token"
   end
 
-  create_table "valera", id: false, force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "health", limit: 2, default: 100
-    t.integer "mana", limit: 2, default: 10
-    t.integer "cheerfulness", limit: 2, default: 10
-    t.integer "fatigue", limit: 2, default: 100
-    t.integer "money", limit: 2, default: 100
-    t.datetime "date", default: -> { "CURRENT_TIMESTAMP" }, null: false
-  end
-
-  create_table "valeras", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "health", default: 100
-    t.integer "mana", default: 10
-    t.integer "cheerfulness", default: 10
-    t.integer "fatigue", default: 100
-    t.integer "money", default: 100
+  create_table "valera_actions", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    t.integer "health"
+    t.integer "mana"
+    t.integer "cheerfulness"
+    t.integer "fatigue"
+    t.integer "money"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "valeras", force: :cascade do |t|
+    t.bigint "user_id"
+    t.integer "health"
+    t.integer "mana"
+    t.integer "cheerfulness"
+    t.integer "fatigue"
+    t.integer "money"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_valeras_on_user_id", unique: true
+  end
+
+  create_table "work_characteristics", force: :cascade do |t|
+    t.bigint "valera_id"
+    t.integer "mana", default: 50
+    t.integer "fatigue", default: 10
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["valera_id"], name: "index_work_characteristics_on_valera_id", unique: true
+  end
+
+  add_foreign_key "max_characteristics", "valeras"
+  add_foreign_key "metro_characteristics", "valeras"
+  add_foreign_key "min_characteristics", "valeras"
+  add_foreign_key "sleep_characteristics", "valeras"
+  add_foreign_key "valeras", "users"
+  add_foreign_key "work_characteristics", "valeras"
 end

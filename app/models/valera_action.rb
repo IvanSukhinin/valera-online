@@ -1,0 +1,2 @@
+class ValeraAction < ApplicationRecord
+end

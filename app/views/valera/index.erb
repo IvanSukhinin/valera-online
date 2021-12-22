@@ -1,19 +1,60 @@
 <h2>Valera</h2>
 
-<div class="p-2 container d-flex flex-row justify-content-center">
-	<%= image_tag("1.png", id: "valera") %>
-	<div class="d-flex flex-column">
-		<div class="p-2">
-		<button>123</button>
-		</div>
-		<div class="p-2">
-			<button>456</button>
-		</div>
-		<div class="p-2">
-			<button>456</button>
-		</div>
-		<div class="p-2">
-			<button>456</button>
-		</div>
-	</div>
+<div class="container">
+  <!-- #image_tag(@image + ".png", id: "valera", class:"col") -->
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <p>Health: <%= @valera.health %></p>
+    </div>
+    <div class="col">
+      <p>Mana: <%= @valera.mana %></p>
+    </div>
+    <div class="col">
+      <p>Cheerfulness: <%= @valera.cheerfulness %></p>
+    </div>
+    <div class="col">
+      <p>Fatigue: <%= @valera.fatigue %></p>
+    </div>
+    <div class="col">
+      <p>Money: <%= @valera.money %></p>
+    </div>
+  </div>
+  <div class="row">
+
+    <% for action in @actions do %>
+
+    <div class="col">
+      <button class="do_btn btn btn-primary"><%= action.description %></button>
+
+      <button class="hide_btn btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#action<%= action.id %>" aria-expanded="false" aria-controls="multiCollapseExample2"><span class="arr">&dArr;</span></button>
+
+      <ul class="hide_list collapse multi-collapse" id="action<%= action.id %>">
+        <% unless action.health == 0 %>
+          <li><%= action.health %> health</li>
+        <% end %>
+
+        <% unless action.mana == 0 %>
+          <li><%= action.mana %>  mana</li>
+        <% end %>
+
+        <% unless action.cheerfulness == 0 %>
+          <li><%= action.cheerfulness %> cheerfulness</li>
+        <% end %>
+
+        <% unless action.fatigue == 0 %>
+          <li><%= action.fatigue %> fatigue</li>
+        <% end %>
+
+        <% unless action.money == 0 %>
+          <li><%= action.money %> $</li>
+        <% end %>
+      </ul>
+    </div>
+
+    <% end %>
+
+  </div>
 </div>
