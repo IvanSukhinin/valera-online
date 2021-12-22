@@ -1,8 +1,16 @@
 //= require jquery
 //= require jquery_ujs
 
-$("#health").replaceWith("<p id='health'>Health: <%=@valera.health%></p>");
-$("#mana").replaceWith("<p id='mana'>Mana: <%=@valera.mana%></p>");
-$("#cheerfulness").replaceWith("<p id='cheerfulness'>Cheerfulness: <%=@valera.cheerfulness%></p>");
-$("#fatigue").replaceWith("<p id='fatigue'>Fatigue: <%=@valera.fatigue%></p>");
+$("#health").css("width", <%=@valera.health%> + "%");
+$("#health").text(<%=@valera.health%> + "%");
+
+$("#mana").css("width", <%=@valera.mana%> + "%");
+$("#mana").text(<%=@valera.mana%> + "%");
+
+$("#cheerfulness").css("width", <%=(@valera.cheerfulness.abs+@max_characteristic.cheerfulness)*5%> + "%");
+$("#cheerfulness").text(<%=(@valera.cheerfulness.abs+@max_characteristic.cheerfulness)*5%> + "%");
+
+$("#fatigue").css("width", <%=@valera.fatigue%> + "%");
+$("#fatigue").text(<%=@valera.fatigue%> + "%");
+
 $("#money").replaceWith("<p id='money'>Money: <%=@valera.money%>$</p>");

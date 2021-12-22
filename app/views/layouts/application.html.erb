@@ -10,39 +10,12 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-dark bg-dark">
-      <div class="container-fluid" id="menu">
-        <%= link_to 'Valera-Online', root_path, class: 'navbar-brand' %>
-        <% if signed_in? %>
-            <ul class="nav navbar-nav">
-              <li><%= link_to current_user.email, root_path, class: 'nav_link', id: 'email'%></li>
-            </ul>
-        <% end %>
+
+    <%= render "layouts/menu" %>
      
-        <ul class="nav navbar-nav pull-right">
-          <% if signed_in? %>
-          <li><%= link_to 'Sign out', sign_out_path, class: 'nav_link', method: :delete %></li>
-          <% else %>
-          <li><%= link_to 'Sign in', sign_in_path, class: 'nav_link'%></li>
-          <% end %>
-        </ul>
-      </div>
-    </nav>
-     
-    <div class="container">
-      <% flash.each do |key, value| %>
-        <% alert_class = case key
-                         when 'notice' then "success"
-                         when 'alert' then "danger"
-                         else key
-                         end %>
-        <%= content_tag :div, class: "alert alert-#{alert_class} alert-dismissible fade show" do %>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-          <%= value %>
-        <% end %>
-      <% end %>
-    </div>
-    <div class="container d-flex flex-column justify-content-center">
+    <%= render "layouts/flashes" %>
+
+    <div id="yield-block" class="container d-flex flex-column justify-content-center">
       <%= yield %>
     </div>
 

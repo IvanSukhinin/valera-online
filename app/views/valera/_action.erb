@@ -1,0 +1,32 @@
+<% for action in @actions do %>
+  <div class="action_btn p-2">
+    <%= form_with(model: @valera, local: false, id:"my-form") do |form| %>
+      <%= form.hidden_field :action_id, value:action.id %>
+      <%= form.submit action.description, class:"do_btn btn btn-primary"%>
+    <% end %>
+
+    <button id="hide-btn<%= action.id %>" class="down hide_btn btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#action<%= action.id %>" aria-expanded="false" aria-controls="action<%= action.id %>"><span class="arr">&dArr;</span></button>
+
+    <ul class="hide_list collapse multi-collapse" id="action<%= action.id %>">
+      <% unless action.health == 0 %>
+        <li><%= action.health %> health</li>
+      <% end %>
+
+      <% unless action.mana == 0 %>
+        <li><%= action.mana %>  mana</li>
+      <% end %>
+
+      <% unless action.cheerfulness == 0 %>
+        <li><%= action.cheerfulness %> cheerfulness</li>
+      <% end %>
+
+      <% unless action.fatigue == 0 %>
+        <li><%= action.fatigue %> fatigue</li>
+      <% end %>
+
+      <% unless action.money == 0 %>
+        <li><%= action.money %> $</li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>

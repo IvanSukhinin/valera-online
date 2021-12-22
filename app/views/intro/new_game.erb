@@ -1,3 +1,7 @@
-<h1>Ты проиграл. Валера умер.</h1>
+<h1>Valera exterminated!</h1>
 
-<h2><%= link_to 'Начать новую игру:', valera_path, class: ''%></h2>
+<h2><%= link_to 'Start new game', valera_path %></h2>
+
+<div id="img-block" class="row justify-content-center">
+	<%= image_tag("dead.jpg", id: "valera", class: "col img") %>
+</div>

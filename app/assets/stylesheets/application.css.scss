@@ -14,15 +14,26 @@
  *= require_self
  */
 
+body {
+    background-color: #d9fffc !important;
+    margin: 0;
+    padding: 0;
+}
+
+#yield-block {
+    min-width: 300px !important;
+    max-width: 1200px !important;
+    background-color: #ffffff !important;
+    margin-top: 10px;
+    padding: 30px;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold !important;
     line-height: 1.1;
     text-align: center;
 }
 
-.navbar {
-    margin-bottom: 30px;
-}
 
 #menu {
     max-width: 900px;
@@ -47,4 +58,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .link:hover {
     color: #575756;
+}
+
+#img-block {
+    max-width: 1200px !important;
+}
+
+.img {
+    max-width: 800px !important;
 }

@@ -1,0 +1,13 @@
+<div class="container">
+  <% flash.each do |key, value| %>
+    <% alert_class = case key
+                     when 'notice' then "success"
+                     when 'alert' then "danger"
+                     else key
+                     end %>
+    <%= content_tag :div, class: "alert alert-#{alert_class} alert-dismissible fade show" do %>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      <%= value %>
+    <% end %>
+  <% end %>
+</div>

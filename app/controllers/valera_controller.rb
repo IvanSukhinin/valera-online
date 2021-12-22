@@ -1,5 +1,9 @@
 class ValeraController < ApplicationController
   def index
+    unless defined? current_user.id
+      redirect_to "/" and return
+    end
+
     @valera = Valera.where(user_id: current_user.id).first
     @actions = ValeraAction.all
 
@@ -9,7 +13,7 @@ class ValeraController < ApplicationController
       fill_valera
       @valera.save!
 
-      fill_characteris
+      fill_characteristics
       save_characteristics
     else 
       find_characteristics
@@ -22,30 +26,24 @@ class ValeraController < ApplicationController
       valera_action(action)
 
       if die?
-        puts "------------"
-        puts "12345"
-        puts "------------"
-
-
         ActionHistory.destroy_by(valera_id: @valera.id)
         Valera.destroy_by(id: @valera.id)
 
-        redirect_to "/intro/new_game" and return
+        redirect_to "/new_game" and return
       end
 
       write_action_to_history(action)
 
       respond_to do |format|
-        if @valera.save then
-          format.js{render :index}
-        else
-          format.html { render :index }
+        if @valera.save
+          format.js
         end
       end
     end
   end
 
   private
+
   def write_action_to_history(action)
     @history = ActionHistory.new
     @history.valera_id = @valera.id
@@ -61,7 +59,7 @@ class ValeraController < ApplicationController
       @work_characteristic = WorkCharacteristic.new
   end
 
-  def fill_characteris
+  def fill_characteristics
     @max_characteristic.valera_id = @valera.id
     @min_characteristic.valera_id = @valera.id
     @sleep_characteristic.valera_id = @valera.id
@@ -99,10 +97,6 @@ class ValeraController < ApplicationController
 
   def die?
     @valera.health <= @min_characteristic.health || @valera.mana <= @min_characteristic.mana || @valera.cheerfulness <= @min_characteristic.cheerfulness || @valera.fatigue <= @min_characteristic.fatigue || @valera.money <= @min_characteristic.money
-  end
-
-  def clear_valera
-    delete_all
   end
 
   def valera_action(action)
@@ -145,6 +139,12 @@ class ValeraController < ApplicationController
 
   def image_name
     @image = '1'
+    # if @valera.health in (@max_characteristic.health * 0.7)..@max_characteristic.health and
+    #   @valera.mana in (@min_characteristic.mana * 0.7)..@max_characteristic.mana and
+    #   @valera.cheerfulness
+    #   @image = '1'
+    # end
+
   end
 
   def action_params

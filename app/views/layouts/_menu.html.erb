@@ -1,0 +1,18 @@
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid" id="menu">
+    <%= link_to 'Valera-Online', root_path, class: 'navbar-brand' %>
+    <% if signed_in? %>
+        <ul class="nav navbar-nav">
+          <li><%= link_to current_user.email, root_path, class: 'nav_link', id: 'email'%></li>
+        </ul>
+    <% end %>
+ 
+    <ul class="nav navbar-nav pull-right">
+      <% if signed_in? %>
+      <li><%= link_to 'Sign out', sign_out_path, class: 'nav_link', method: :delete %></li>
+      <% else %>
+      <li><%= link_to 'Sign in', sign_in_path, class: 'nav_link'%></li>
+      <% end %>
+    </ul>
+  </div>
+</nav>
