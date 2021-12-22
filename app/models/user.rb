@@ -1,4 +1,4 @@
 class User < ApplicationRecord
   include Clearance::User
-  has_one :valera
+  has_one :valera, :dependent => :destroy
 end

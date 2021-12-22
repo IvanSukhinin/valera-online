@@ -1,3 +1,3 @@
 class SleepCharacteristic < ApplicationRecord
-  belongs_to :valera
+  belongs_to :valera, optional: true
 end

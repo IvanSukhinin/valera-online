@@ -1,53 +1,91 @@
 class ValeraController < ApplicationController
   def index
     @valera = Valera.where(user_id: current_user.id).first
-    @actions = ValeraAction.all()
+    @actions = ValeraAction.all
+
     unless @valera then
-      create_valera
+      @valera = Valera.new
       create_characteristics
+      fill_valera
+      @valera.save!
+
+      fill_characteris
+      save_characteristics
     else 
       find_characteristics
     end
 
-    self.image_name
+    image_name
+
+    if defined? action_params['action_id']
+      action = ValeraAction.where(id: action_params['action_id'].to_i).first
+      valera_action(action)
+
+      if die?
+        puts "------------"
+        puts "12345"
+        puts "------------"
+
+
+        ActionHistory.destroy_by(valera_id: @valera.id)
+        Valera.destroy_by(id: @valera.id)
+
+        redirect_to "/intro/new_game" and return
+      end
+
+      write_action_to_history(action)
+
+      respond_to do |format|
+        if @valera.save then
+          format.js{render :index}
+        else
+          format.html { render :index }
+        end
+      end
+    end
   end
 
-  def create_valera
-      @valera = Valera.new
-      fill_valera
-      @valera.save
+  private
+  def write_action_to_history(action)
+    @history = ActionHistory.new
+    @history.valera_id = @valera.id
+    @history.valera_action_id = action.id
+    @history.save!
   end
 
   def create_characteristics
-    @max_characteristic = MaxCharacteristic.new
-    @min_characteristic = MinCharacteristic.new
+      @max_characteristic = MaxCharacteristic.new
+      @min_characteristic = MinCharacteristic.new
+      @sleep_characteristic = SleepCharacteristic.new
+      @metro_characteristic = MetroCharacteristic.new
+      @work_characteristic = WorkCharacteristic.new
+  end
 
-    @sleep_characteristic = SleepCharacteristic.new
-    @metro_characteristic = MetroCharacteristic.new
-    @work_characteristic = WorkCharacteristic.new
-
+  def fill_characteris
     @max_characteristic.valera_id = @valera.id
     @min_characteristic.valera_id = @valera.id
-
     @sleep_characteristic.valera_id = @valera.id
     @metro_characteristic.valera_id = @valera.id
     @work_characteristic.valera_id = @valera.id
+  end
 
-    @max_characteristic.save
-    @min_characteristic.save
-
-    @sleep_characteristic.save
-    @metro_characteristic.save
-    @work_characteristic.save
+  def save_characteristics
+    @max_characteristic.save!
+    @min_characteristic.save!
+    @sleep_characteristic.save!
+    @metro_characteristic.save!
+    @work_characteristic.save!
   end
 
   def find_characteristics
+
     @max_characteristic = MaxCharacteristic.where(valera_id: @valera.id).first
     @min_characteristic = MinCharacteristic.where(valera_id: @valera.id).first
 
     @sleep_characteristic = SleepCharacteristic.where(valera_id: @valera.id).first
     @metro_characteristic = MetroCharacteristic.where(valera_id: @valera.id).first
     @work_characteristic = WorkCharacteristic.where(valera_id: @valera.id).first
+
   end
 
   def fill_valera
@@ -61,6 +99,10 @@ class ValeraController < ApplicationController
 
   def die?
     @valera.health <= @min_characteristic.health || @valera.mana <= @min_characteristic.mana || @valera.cheerfulness <= @min_characteristic.cheerfulness || @valera.fatigue <= @min_characteristic.fatigue || @valera.money <= @min_characteristic.money
+  end
+
+  def clear_valera
+    delete_all
   end
 
   def valera_action(action)
@@ -90,7 +132,7 @@ class ValeraController < ApplicationController
     if action.name == "metro" and @valera.mana <= @metro_characteristic.min_mana and @valera.mana >= @metro_characteristic.max_mana
       return false
     end
-    @valera.money += @sleep_characteristic.tips + action.money
+    @valera.money += @metro_characteristic.tips + action.money
     return true
   end
 
@@ -103,5 +145,9 @@ class ValeraController < ApplicationController
 
   def image_name
     @image = '1'
+  end
+
+  def action_params
+    params.require(:valera).permit(:action_id)
   end
 end

@@ -6,4 +6,7 @@ class IntroController < ApplicationController
 		end
 	end
 
+	def new_game
+	end
+
 end

@@ -10,10 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_19_221937) do
+ActiveRecord::Schema.define(version: 2021_12_20_175353) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "action_histories", force: :cascade do |t|
+    t.bigint "valera_id"
+    t.bigint "valera_action_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["valera_action_id"], name: "index_action_histories_on_valera_action_id"
+    t.index ["valera_id"], name: "index_action_histories_on_valera_id"
+  end
 
   create_table "max_characteristics", force: :cascade do |t|
     t.bigint "valera_id"
@@ -102,6 +111,8 @@ ActiveRecord::Schema.define(version: 2021_12_19_221937) do
     t.index ["valera_id"], name: "index_work_characteristics_on_valera_id", unique: true
   end
 
+  add_foreign_key "action_histories", "valera_actions"
+  add_foreign_key "action_histories", "valeras"
   add_foreign_key "max_characteristics", "valeras"
   add_foreign_key "metro_characteristics", "valeras"
   add_foreign_key "min_characteristics", "valeras"
