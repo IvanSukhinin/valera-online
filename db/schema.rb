@@ -10,16 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_04_071314) do
+ActiveRecord::Schema.define(version: 2021_12_04_164553) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "user", id: :serial, force: :cascade do |t|
-    t.string "username", limit: 255, null: false
-    t.string "pwd", limit: 255, null: false
-    t.datetime "date", default: -> { "CURRENT_TIMESTAMP" }, null: false
-  end
 
   create_table "users", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
@@ -30,6 +24,27 @@ ActiveRecord::Schema.define(version: 2021_12_04_071314) do
     t.string "remember_token", limit: 128, null: false
     t.index ["email"], name: "index_users_on_email"
     t.index ["remember_token"], name: "index_users_on_remember_token"
+  end
+
+  create_table "valera", id: false, force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.integer "health", limit: 2, default: 100
+    t.integer "mana", limit: 2, default: 10
+    t.integer "cheerfulness", limit: 2, default: 10
+    t.integer "fatigue", limit: 2, default: 100
+    t.integer "money", limit: 2, default: 100
+    t.datetime "date", default: -> { "CURRENT_TIMESTAMP" }, null: false
+  end
+
+  create_table "valeras", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "health", default: 100
+    t.integer "mana", default: 10
+    t.integer "cheerfulness", default: 10
+    t.integer "fatigue", default: 100
+    t.integer "money", default: 100
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
 end

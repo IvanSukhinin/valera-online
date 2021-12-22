@@ -24,7 +24,7 @@ gem 'jbuilder', '~> 2.7'
 
 # Use Bootstrap
 gem 'bootstrap-sass'
-#Use Clearance
+# Use Clearance
 gem 'clearance'
 
 # Use Active Storage variant
