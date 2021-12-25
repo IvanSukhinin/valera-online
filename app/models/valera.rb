@@ -10,9 +10,9 @@ class Valera < ApplicationRecord
   has_one :sleep_characteristic, dependent: :destroy
   has_one :work_characteristic, dependent: :destroy
 
-  def with_id(user_id)
+  def with_id(id)
     create_characteristics
-    fill_base_valera user_id
+    fill_base_valera id
     fill_valera
     set_id_range_characteristic
     set_id_base_characteristic
@@ -58,8 +58,8 @@ class Valera < ApplicationRecord
     self.work_characteristic = WorkCharacteristic.where(valera_id: id).first
   end
 
-  def fill_base_valera(user_id)
-    self.user_id = user_id
+  def fill_base_valera(id)
+    self.user_id = id
     self.health = max_characteristic.health
     self.mana = max_characteristic.mana
   end
@@ -72,8 +72,7 @@ class Valera < ApplicationRecord
 
   def dead?
     health <= min_characteristic.health ||
-      cheerfulness <= min_characteristic.cheerfulness ||
-      money <= min_characteristic.money
+      cheerfulness <= min_characteristic.cheerfulness || money <= min_characteristic.money
   end
 
   def action(action)
@@ -86,6 +85,7 @@ class Valera < ApplicationRecord
     self.fatigue += action.fatigue
     check_base_characteristics
     check_characteristics
+    self
   end
 
   def condition_action(action)
@@ -113,12 +113,12 @@ class Valera < ApplicationRecord
   end
 
   def check_base_characteristics
-    self.health = [self.health, max_characteristic.health].min
-    self.mana = [self.mana, max_characteristic.mana].min
+    self.health = [[self.health, max_characteristic.health].min, min_characteristic.health].max
+    self.mana = [[self.mana, max_characteristic.mana].min, min_characteristic.mana].max
   end
 
   def check_characteristics
-    self.cheerfulness = [self.cheerfulness, max_characteristic.cheerfulness].min
-    self.fatigue = [self.fatigue, max_characteristic.fatigue].min
+    self.cheerfulness = [[self.cheerfulness, max_characteristic.cheerfulness].min, min_characteristic.cheerfulness].max
+    self.fatigue = [[self.fatigue, max_characteristic.fatigue].min, min_characteristic.fatigue].max
   end
 end

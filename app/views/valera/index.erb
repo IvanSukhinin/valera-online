@@ -1,17 +1,17 @@
 <h2>Valera</h2>
 
 <div id="img-block" class="row justify-content-center">
-  <%= image_tag(@image + ".jpg", id: "valera", class:"col img") %>
+  <%= image_tag(@image, id: "valera", class:"col img") %>
 </div>
 
 <div class="container">
   <div class="row justify-content-center" id="characteristics">
-  <%= render "characteristics" %>
+    <%= render "characteristics" %>
   </div>
 
   <div class="d-flex flex-wrap justify-content-center">
-
-  <%= render "valera/action" %>
-
+    <%= render "valera/action" %>
   </div>
+
+  <p id="temp_hidden"></p>
 </div>

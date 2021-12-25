@@ -1,6 +1,8 @@
 //= require jquery
 //= require jquery_ujs
 
+
+/*Characteristics*/
 $("#health").css("width", <%=@valera.health%> + "%");
 $("#health").text(<%=@valera.health%> + "%");
 
@@ -14,3 +16,54 @@ $("#fatigue").css("width", <%=@valera.fatigue%> + "%");
 $("#fatigue").text(<%=@valera.fatigue%> + "%");
 
 $("#money").replaceWith("<p id='money'>Money: <%=@valera.money%>$</p>");
+
+/*Images*/
+$('#temp_hidden').html(<%=@valera.max_characteristic.health%>);
+var max_health = parseInt($("#temp_hidden").text());
+
+$('#temp_hidden').html(<%=@valera.max_characteristic.cheerfulness*10%>);
+var max_cheerfulness = parseInt($("#temp_hidden").text());
+
+$('#temp_hidden').html(<%=@valera.min_characteristic.money%>);
+var min_money = parseInt($("#temp_hidden").text());
+
+var health = parseInt($("#health").text());
+var cheerfulness = parseInt($("#cheerfulness").text());
+var money = parseInt($("#money").text());
+
+var img_1 = '<%= image_tag("1.jpg", id: "valera", class:"col img") %>';
+var img_2 = '<%= image_tag("2.jpg", id: "valera", class:"col img") %>';
+var img_3 = '<%= image_tag("3.jpg", id: "valera", class:"col img") %>';
+
+if (health >= max_health * 0.7) {
+	$("#valera").replaceWith(img_1);
+} else if (health >= max_health * 0.4) {
+	$("#valera").replaceWith(img_2);
+} else {
+	$("#valera").replaceWith(img_3);
+}
+
+
+// $('#temp_hidden').html(<%=@valera.work_characteristic.mana%>);
+// var work_mana = parseInt($("#temp_hidden").text());
+
+
+// $('#temp_hidden').html(<%=@valera.work_characteristic.fatigue%>);
+// var work_fatigue = parseInt($("#temp_hidden").text());
+
+// var mana = parseInt($("#mana").text());
+
+// var fatigue = parseInt($("#fatigue").text());
+// // action_name == 'work' and self.mana >= work_characteristic.mana and self.fatigue >= work_characteristic.fatigue
+// /*Hidden buttons*/
+// $(document).on("click",".do_btn", function () {
+//     var btnId = $(this).attr("id");
+//     if (btnId == "work" && mana >= work_mana && fatigue >= work_fatigue) {
+//     	var check = $('#' + btnId).text("123");
+//     	console.log(check);
+//     }
+    
+//     console.log(btnId);
+// });
+
+

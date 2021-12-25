@@ -2,7 +2,7 @@
   <div class="action_btn p-2">
     <%= form_with(model: @valera, local: false, id:"my-form") do |form| %>
       <%= form.hidden_field :action_id, value:action.id %>
-      <%= form.submit action.description, class:"do_btn btn btn-primary"%>
+      <%= form.submit action.description, class:"do_btn btn btn-primary", id:action.name%>
     <% end %>
 
     <button id="hide-btn<%= action.id %>" class="down hide_btn btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#action<%= action.id %>" aria-expanded="false" aria-controls="action<%= action.id %>"><span class="arr">&dArr;</span></button>
