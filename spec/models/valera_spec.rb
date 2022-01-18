@@ -11,7 +11,9 @@ RSpec.describe Valera, type: :model do
 
   describe '#action' do
     context 'when the action is sleep' do
-      let(:action) { build(:valera_action, name: 'sleep', money: 0, mana: -50, health: 90, cheerfulness: -3, fatigue: -70) }
+      let(:action) do
+        build(:valera_action, name: 'sleep', money: 0, mana: -50, health: 90, cheerfulness: -3, fatigue: -70)
+      end
 
       it { expect(valera.action(action).money).to eq 100 }
       it { expect(valera.action(action).mana).to eq 50 }
@@ -21,7 +23,9 @@ RSpec.describe Valera, type: :model do
     end
 
     context 'when the action is metro' do
-      let(:action) { build(:valera_action, name: 'metro', money: 20, mana: 10, health: 0, cheerfulness: 1, fatigue: 20) }
+      let(:action) do
+        build(:valera_action, name: 'metro', money: 20, mana: 10, health: 0, cheerfulness: 1, fatigue: 20)
+      end
 
       it { expect(valera.action(action).money).to eq 120 }
       it { expect(valera.action(action).mana).to eq 100 }
@@ -31,7 +35,9 @@ RSpec.describe Valera, type: :model do
     end
 
     context 'when the action is marginal' do
-      let(:action) { build(:valera_action, name: 'marginal', money: -150, mana: 90, health: -80, cheerfulness: 5, fatigue: 80) }
+      let(:action) do
+        build(:valera_action, name: 'marginal', money: -150, mana: 90, health: -80, cheerfulness: 5, fatigue: 80)
+      end
 
       it { expect(valera.action(action).money).to eq(-50) }
       it { expect(valera.action(action).mana).to eq 100 }
@@ -41,7 +47,9 @@ RSpec.describe Valera, type: :model do
     end
 
     context 'when the action is bar' do
-      let(:action) { build(:valera_action, name: 'bar', money: -100, mana: 60, health: -10, cheerfulness: 1, fatigue: 40) }
+      let(:action) do
+        build(:valera_action, name: 'bar', money: -100, mana: 60, health: -10, cheerfulness: 1, fatigue: 40)
+      end
 
       it { expect(valera.action(action).money).to eq 0 }
       it { expect(valera.action(action).mana).to eq 100 }
@@ -51,7 +59,9 @@ RSpec.describe Valera, type: :model do
     end
 
     context 'when the action is series' do
-      let(:action) { build(:valera_action, name: 'series', money: -20, mana: 30, health: -5, cheerfulness: -1, fatigue: 10) }
+      let(:action) do
+        build(:valera_action, name: 'series', money: -20, mana: 30, health: -5, cheerfulness: -1, fatigue: 10)
+      end
 
       it { expect(valera.action(action).money).to eq 80 }
       it { expect(valera.action(action).mana).to eq 100 }
@@ -61,7 +71,9 @@ RSpec.describe Valera, type: :model do
     end
 
     context 'when the action is nature' do
-      let(:action) { build(:valera_action, name: 'nature', money: 0, mana: -10, health: 0, cheerfulness: 1, fatigue: 10) }
+      let(:action) do
+        build(:valera_action, name: 'nature', money: 0, mana: -10, health: 0, cheerfulness: 1, fatigue: 10)
+      end
 
       it { expect(valera.action(action).money).to eq 100 }
       it { expect(valera.action(action).mana).to eq 90 }
