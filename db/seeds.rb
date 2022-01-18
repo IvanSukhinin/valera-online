@@ -18,5 +18,6 @@ action_list = [
 ]
 
 action_list.each do |name, description, health, mana, cheerfulness, fatigue, money|
-  ValeraAction.create( name: name, description: description, health:health, mana: mana, cheerfulness: cheerfulness, fatigue: fatigue, money: money)
+  ValeraAction.create(name: name, description: description, health: health, mana: mana, cheerfulness: cheerfulness,
+                      fatigue: fatigue, money: money)
 end
