@@ -11,6 +11,7 @@ RSpec.describe 'Valera management', type: :feature do
   end
 
   it 'Valera dead' do
+    create(:valera_action, name: 'grandpa', description: 'Drink with grandpa', health: -100)
     visit valera_path
     click_button 'grandpa'
     expect(page).to have_current_path(new_game_path)

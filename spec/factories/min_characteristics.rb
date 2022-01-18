@@ -1,9 +1,9 @@
 FactoryBot.define do
   factory :min_characteristic do
-    health { 1 }
-    mana { 1 }
-    cheerfulness { 1 }
-    fatigue { 1 }
-    money { 1 }
+    health { 0 }
+    mana { 0 }
+    cheerfulness { -10 }
+    fatigue { 0 }
+    money { -500 }
   end
 end
