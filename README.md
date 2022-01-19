@@ -1,24 +1,24 @@
-# README
+# Valera-Online
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![Unit Tests & Lint](https://github.com/ssshazam/valera-online/workflows/Unit%20Tests%20&%20Lint/badge.svg)
 
-Things you may want to cover:
+### Ruby version: 3.0.3
 
-* Ruby version
+### Database installation
+* sudo apt update
+* sudo apt install postgresql postgresql-contrib
+* sudo -i -u postgres
+* createuser --interactive
+* createdb myapp
+* sudo adduser myapp
 
-* System dependencies
+### Setup
+* gem install bundler
+* bundle install
+* rails db:setup
 
-* Configuration
+### Run tests
+* rspec
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Run app
+* rails s
