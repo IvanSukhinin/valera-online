@@ -9,7 +9,7 @@
  
     <ul class="nav navbar-nav pull-right">
       <% if signed_in? %>
-      <li><%= link_to 'Sign out', sign_out_path, class: 'nav_link', method: :delete %></li>
+      <li><%= link_to 'Sign out', sign_out_path, class: 'nav_link', id: 'sign-out', method: :delete %></li>
       <% else %>
       <li><%= link_to 'Sign in', sign_in_path, class: 'nav_link'%></li>
       <% end %>
