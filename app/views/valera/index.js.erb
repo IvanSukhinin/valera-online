@@ -2,7 +2,7 @@
 //= require jquery_ujs
 
 
-/*Characteristics*/
+/* Characteristics */
 $("#health").css("width", <%=@valera.health%> + "%");
 $("#health").text(<%=@valera.health%> + "%");
 
@@ -17,7 +17,7 @@ $("#fatigue").text(<%=@valera.fatigue%> + "%");
 
 $("#money").replaceWith("<p id='money'>Money: <%=@valera.money%>$</p>");
 
-/*Images*/
+/* Images */
 $('#temp_hidden').html(<%=@valera.max_characteristic.health%>);
 var max_health = parseInt($("#temp_hidden").text());
 
@@ -42,28 +42,3 @@ if (health >= max_health * 0.7) {
 } else {
 	$("#valera").replaceWith(img_3);
 }
-
-
-// $('#temp_hidden').html(<%=@valera.work_characteristic.mana%>);
-// var work_mana = parseInt($("#temp_hidden").text());
-
-
-// $('#temp_hidden').html(<%=@valera.work_characteristic.fatigue%>);
-// var work_fatigue = parseInt($("#temp_hidden").text());
-
-// var mana = parseInt($("#mana").text());
-
-// var fatigue = parseInt($("#fatigue").text());
-// // action_name == 'work' and self.mana >= work_characteristic.mana and self.fatigue >= work_characteristic.fatigue
-// /*Hidden buttons*/
-// $(document).on("click",".do_btn", function () {
-//     var btnId = $(this).attr("id");
-//     if (btnId == "work" && mana >= work_mana && fatigue >= work_fatigue) {
-//     	var check = $('#' + btnId).text("123");
-//     	console.log(check);
-//     }
-    
-//     console.log(btnId);
-// });
-
-

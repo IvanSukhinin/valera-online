@@ -1,18 +1,22 @@
-<div id="clearance" class="password-reset">
-  <h2><%= t(".title") %></h2>
+<div class="row justify-content-center">
+  <div id="clearance" class="sign-up col-3">
+    <div id="clearance" class="password-reset">
+      <h2><%= t(".title") %></h2>
 
-  <p><%= t(".description") %></p>
+      <p><%= t(".description") %></p>
 
-  <%= form_for :password_reset,
-        url: [@user, :password, token: @user.confirmation_token],
-        html: { method: :put } do |form| %>
-    <%= form.label :password %>
-    <div class="password-field">
-      <%= form.password_field :password %>
+      <%= form_for :password_reset,
+            url: [@user, :password, token: @user.confirmation_token],
+            html: { method: :put } do |form| %>
+        <%= form.label :password %>
+        <div class="password-field">
+          <%= form.password_field :password %>
+        </div>
+
+        <div class="submit-field">
+          <%= form.submit %>
+        </div>
+      <% end %>
     </div>
-
-    <div class="submit-field">
-      <%= form.submit %>
-    </div>
-  <% end %>
+  </div>
 </div>

@@ -67,3 +67,32 @@ h1, h2, h3, h4, h5, h6 {
 .img {
     max-width: 800px !important;
 }
+
+.alert {
+    margin-top: 10px;
+}
+
+input[name="commit"] {
+    margin-top: 5px;
+}
+
+.form-control {
+    min-width: 180px;
+}
+
+input[type="email"]:focus, input[type="password"]:focus, input[type="submit"]:focus {
+    border: 1px solid #808080;
+    box-shadow: 0 0 0 !important;
+    outline: 0 none;
+}
+
+
+input[type="submit"], input[type="submit"]:focus {
+    background-color: #d9fffc;
+    border: none;
+    transition: background-color 0.15s ease-in-out
+}
+
+input[type="submit"]:hover {
+    background-color: #bcf7f3;
+}
