@@ -1,0 +1,30 @@
+<div class="row justify-content-center">
+  <div id="action-form" class="sign-up col-3">
+    <%= form_for @valera_action_form, url: action_url do |f| %>
+
+      <%= f.label :name %>
+      <%= f.text_field :name, class: 'form-control' %>
+
+      <%= f.label :description %>
+      <%= f.text_field :description, class: 'form-control' %>
+
+      <%= f.label :health %>
+      <%= f.number_field :health, class: 'form-control' %>
+
+      <%= f.label :mana %>
+      <%= f.number_field :mana, class: 'form-control' %>
+
+      <%= f.label :cheerfulness %>
+      <%= f.number_field :cheerfulness, class: 'form-control' %>
+
+      <%= f.label :fatigue %>
+      <%= f.number_field :fatigue, class: 'form-control' %>
+
+      <%= f.label :money %>
+      <%= f.number_field :money, class: 'form-control' %>
+
+      <%= f.submit %>
+    <% end %>
+
+  </div>
+</div>

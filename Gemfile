@@ -31,6 +31,7 @@ gem 'clearance'
 
 gem 'capybara'
 
+gem 'virtus'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
